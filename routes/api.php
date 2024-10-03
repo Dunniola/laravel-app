@@ -19,6 +19,6 @@ Route::middleware("")->get("/user", function (Request $request) {
     return $request->user();
 
 });
-Route::post('/student',["StudentController"::class, "create"])->name("student.create");
+Route::post('/student',["StudentController"::class, "store"]);
 
 

@@ -8,7 +8,7 @@ use App\Models\Student;
 
 class StudentController extends Controller
 {
-    public function create(Request $request)
+    public function store(Request $request)
     {
 
     $student = new Student;
