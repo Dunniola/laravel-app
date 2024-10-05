@@ -1,6 +1,7 @@
 <?php
 
 
+use App\Http\Controllers\API\StudentController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -15,10 +16,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware("")->get("/user", function (Request $request) {
-    return $request->user();
+// Route::middleware("")->get("/user", function (Request $request) {
+//     return $request->user();
 
-});
-Route::post('/student',["StudentController"::class, "store"]);
+// });
+Route::post('/student',[StudentController::class, "store"]);
 
 

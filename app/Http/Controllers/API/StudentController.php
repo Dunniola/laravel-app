@@ -10,6 +10,7 @@ class StudentController extends Controller
 {
     public function store(Request $request)
     {
+        return true;
 
     $student = new Student;
     $student -> name = $request->input("name");
